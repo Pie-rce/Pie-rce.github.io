@@ -11,8 +11,8 @@ Fonts are separated by a & */
   --accent1-color: #0091FF;
   --accent2-color: #A78A8A;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: @import url(https://fonts.google.com/specimen/Merriweather);
+  /* change the values below to your chosen @import url(https://fonts.google.com/specimen/Merriweather);font(s) */
+  --heading-font: 
   --paragraph-font: @import url(https://fonts.google.com/specimen/Mulish?query=mulish);
 
   /* these colors below should be chosen from among your palette colors above */
