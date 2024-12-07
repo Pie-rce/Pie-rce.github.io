@@ -8,99 +8,167 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Mulish:wght@400;600&display=swap');
 
-        body {
-            font-family: 'Mulish', Arial, sans-serif; 
-            line-height: 1.6;
-            font-size: 22px;
-            color: #333;
-            margin: 0; 
-            padding: 0;
-        }
+body {
+    font-family: 'Mulish', Arial, sans-serif; 
+    line-height: 1.6;
+    font-size: 22px;
+    color: #333;
+    margin: 0; 
+    padding: 0;
+}
 
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Merriweather', Georgia, serif;
-        }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', Georgia, serif;
+}
 
-        .home-title {
-            font-family: 'Merriweather', Georgia, serif;
-            font-size: 2em;
-            margin-top: 10px;
-            font-weight: 700;
-        }
+.home-title {
+    font-family: 'Merriweather', Georgia, serif;
+    font-size: 2em;
+    margin-top: 10px;
+    font-weight: 700;
+}
 
-        .msg h2 {
-            font-family: 'Merriweather', Georgia, serif;
-            margin: 0;
-            font-weight: 700;
-        }
+.msg h2 {
+    font-family: 'Merriweather', Georgia, serif;
+    margin: 0;
+    font-weight: 700;
+}
 
-        .book, .join {
-            font-size: 18px;
-            padding: 15px 30px;
-            margin-top: 50px;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            border-radius: 5px;
-            text-decoration: none; 
-  --accent1-color: #0091FF;
-  box-shadow: 0 4px 8px (0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+.book, .join {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
-        
-        .book:hover, .join:hover {
-            background-color: #45a049;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
+.book:hover, .join:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-        
-        .msg p {
-            font-family: 'Mulish', Arial, sans-serif;
-            font-size: .8em;
-            line-height: 1.5em;
-            padding-bottom: 15px;
-        }
+.msg p {
+    font-family: 'Mulish', Arial, sans-serif;
+    font-size: .8em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
 
-        
-        #logo_link {
-            padding-top: 5px;
-        }
+#logo_link {
+    padding-top: 5px;
+}
 
-        nav a {
-            padding: 35px;
-            text-decoration: none;
-            color: #333;
-            font-weight: 700;
-            transition: color 0.3s ease;
-        }
+nav a {
+    padding: 35px;
+    text-decoration: none; /* Remove underline */
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
 
-        nav a:hover {
-            color: #4c81af; 
-        }
+nav a:hover {
+    color: #4c81af; 
+}
 
+.icon {
+    padding-top: 10px;
+}
 
+.msg {
+    padding: 35px;
+}
 
-        
-        .icon {
-            padding-top: 10px;
-        }
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
 
-       
+footer .social img {
+    padding-top: 15px;
+    transition: transform 0.3s ease;
+}
 
+footer .social img:hover {
+    transform: scale(1.2);
+}
 
-        .msg {
-            padding: 35px;
-        }
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
 
-        
-        footer {
-            padding: 25px 50px;
-            margin-top: 200px;
-            background-color: #333;
-            color: white;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-        }
+.rivers-card:hover, .camping-card:hover, .rapids-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    border: 10px solid #0091ff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main img {
+    box-sizing: border-box;
+}
+
+.nav-backdrop {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-backdrop nav a {
+    padding: 35px;
+    text-decoration: none; /* Remove underline */
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav-backdrop nav a:hover {
+    color: #4CAF50;
+}
+
+a {
+    text-decoration: none; /* Remove underline for all links */
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .home-grid {
+        display: block;
+        margin: 0;
+    }
+
+    .rivers-card, .camping-card, .rapids-card {
+        margin: 50px 0;
+    }
+
+    footer .social img {
+        width: 30px;
+    }
+}
 
        
         footer .social img {
@@ -230,7 +298,7 @@
         <section class="rapids-card">
             <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
             <img class="icon" src="images/oars.png" alt="oars icon">
-            <h2>Rapids</h2>
+</html>            <h2>Rapids</h2>
         </section>
         <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
         <section class="msg">
@@ -257,4 +325,3 @@
         </div>
     </footer>
 </body>
-</html>
